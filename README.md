@@ -1,6 +1,5 @@
-## Port Logistics – Vessel & Berth UI
+## LogisManifesto
 
-Modern Next.js UI for exploring vessel information and berth capabilities in a port logistics context.
 
 ### Tech stack
 - **Framework**: Next.js 16 (App Router)
@@ -45,6 +44,6 @@ Modern Next.js UI for exploring vessel information and berth capabilities in a p
 - `src/Data/Berths.js` – Sample berth data.
 
 ### Notes
-- This project is focused on **UI only** – no real backend or API calls.
+- This project is focused on **only Frontend** – no real backend or API calls.
 - You can wire real data into the components by passing props from pages or hooks.
 
