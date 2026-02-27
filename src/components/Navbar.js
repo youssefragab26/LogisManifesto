@@ -17,13 +17,19 @@ export default function Navbar() {
       </div>
       <nav className="hidden md:flex items-center gap-1 ml-8">
         <Link href={"/"}>
-          <span className="rounded-md px-3 py-2 text-sm font-medium text-sky-400 bg-sky-500/10">Vessel</span>
+          <span className="rounded-md px-3 py-2 text-sm font-medium text-sky-400 bg-sky-500/10">Home</span>
         </Link>
         <Link href={"/berths"}>
           <span className="rounded-md px-3 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50">Berths</span>
         </Link>
+        <Link href={"/berthRecommeadation"}>
+          <span className="rounded-md px-3 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50">Berth Recommendation</span>
+        </Link>
         <Link href={"#"}>
           <span className="rounded-md px-3 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50">Schedules</span>
+        </Link>
+        <Link href={"#"}>
+          <span className="rounded-md px-3 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50">Logistics Basics</span>
         </Link>
       </nav>
       <div className="ml-auto flex items-center gap-2">

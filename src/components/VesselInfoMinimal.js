@@ -10,6 +10,13 @@ export default function VesselInfoMinimal() {
   const [LOA, setLOA] = useState('');
   const [draft, setDraft] = useState('');
 
+  const appTest = () => {
+    setVesselName('MSC ILARIA');
+    setImoNumber('IMO9962586');
+    setVasselType('Container Ship');
+    setLOA('366');
+    setDraft('14.4');
+  }
   return (
     <div className="flex flex-1 flex-col md:flex-row gap-6 p-4 md:p-6 lg:p-8 max-w-7xl mx-auto">
       {/* Sidebar: live summary card */}
@@ -195,8 +202,9 @@ export default function VesselInfoMinimal() {
 
           {/* Footer actions */}
           <footer className="flex flex-col-reverse gap-3 pt-2 md:flex-row md:items-center md:justify-between">
-            <button type="button" className="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2.5 text-xs font-medium text-slate-300 hover:bg-slate-800/80 transition">
-              Save as Draft
+            <button type="button" onClick={appTest} className="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2.5 text-xs font-medium text-slate-300 hover:bg-slate-800/80 transition">
+              {/* Save as Draft */}
+              Test
             </button>
             <div className="flex items-center gap-3">
               <span className="text-[11px] text-slate-500">
